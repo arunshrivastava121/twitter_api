@@ -13,7 +13,8 @@ jobs:
   build:
     docker:
       - image: cimg/ruby:3.1.0
-    executor: ruby/default
+    # executor: ruby/default
+    working_directory: ~/.
     steps:
       # - checkout
       - run: bundle install
